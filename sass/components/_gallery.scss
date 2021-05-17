@@ -1,0 +1,29 @@
+.gallery {
+  background-color: $color-dark1;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 20rem;
+
+  &__zoomwall {
+    img {
+      padding: 5px;
+    }
+
+    img:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// &:hover {
+//   outline: 1.5rem solid $color-primary;
+//   transform: scale(1.05) translateY(-.5rem);
+//   box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+//   z-index: 20;
+// }
+
+// }
+
+// &:hover &__photo:not(:hover) {
+// transform: scale(.95);
+// }

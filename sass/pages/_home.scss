@@ -1,0 +1,42 @@
+.section-about {
+  background-color: $color-dark1;
+  padding: 20rem 0;
+}
+
+.section-offer {
+  background-color: $color-dark1;
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-prim-light, 0.9),
+      rgba($color-prim-dark, 0.9)
+    ),
+    url(../img/bgc1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-opinions {
+  padding: 15rem 0;
+  background-color: $color-dark1;
+}
+
+.section-contact {
+  background-color: $color-dark1;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-prim-light, $color-prim-dark);
+  // background-color: $color-dark1;
+}
+
+.book {
+  height: 50rem;
+  background-color: rgba($color-dark1, $alpha: 0.8);
+
+  &__form {
+    // width: 50%;
+    padding: 6rem;
+  }
+}

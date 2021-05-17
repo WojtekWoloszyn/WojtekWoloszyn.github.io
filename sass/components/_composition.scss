@@ -1,0 +1,15 @@
+.composition {
+  &__photo {
+    width: 90%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    transition: all 0.2s;
+    outline-offset: 1px;
+
+    &:hover {
+      outline: 1.5rem solid $color-prim-light;
+      transform: scale(1.05);
+      box-shadow: 0 3rem 4rem rgba($color-black, 0.5);
+    }
+  }
+}
