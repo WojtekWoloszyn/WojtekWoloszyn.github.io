@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e8ec79f801d427f7eb7a08ed28295dd1") format("truetype"),
+url("./flaticon.woff?e8ec79f801d427f7eb7a08ed28295dd1") format("woff"),
+url("./flaticon.woff2?e8ec79f801d427f7eb7a08ed28295dd1") format("woff2"),
+url("./flaticon.eot?e8ec79f801d427f7eb7a08ed28295dd1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e8ec79f801d427f7eb7a08ed28295dd1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "family": "\f101",
+    "mail": "\f102",
+    "placeholder": "\f103",
+    "phone-call": "\f104",
+    "wedding-rings": "\f105",
+    "video-wedding": "\f106",
+    "gallery": "\f107",
+);
+
+.flaticon-family:before {
+    content: map-get($flaticon-map, "family");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-wedding-rings:before {
+    content: map-get($flaticon-map, "wedding-rings");
+}
+.flaticon-video-wedding:before {
+    content: map-get($flaticon-map, "video-wedding");
+}
+.flaticon-gallery:before {
+    content: map-get($flaticon-map, "gallery");
+}

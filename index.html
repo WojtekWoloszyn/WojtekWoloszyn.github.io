@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/icons/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="/css/zoomwall.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <!-- <script>
+      /* paste this line in verbatim */
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+
+      /* customize formbutton below*/
+      formbutton("create", {
+        action: "https://formspree.io/f/xdoyewpb",
+        title: "How can we help?",
+        fields: [
+          {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "your@email.com"
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "What's on your mind?",
+          },
+          { type: "submit" }
+        ],
+        styles: {
+          title: {
+            backgroundColor: "gray"
+          },
+          button: {
+            backgroundColor: "gray"
+          }
+        }
+      });
+    </script> -->
+    <script type="module">
+      import * as zoomwall from '/script/zoomwall.js';
+
+      window.onload = function () {
+        zoomwall.create(document.getElementById('zoomwall'), true);
+      };
+    </script>
+
+    <title>Portfolio dldsa fotografa</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">I'm Kyte Brooten </span>
+          <span class="heading-primary--sub">A freelance photographer</span>
+        </h1>
+
+        <a href="#gallery" class="btn btn--white">Zobacz moje zdjęcia</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Kilka słów o mnie</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis
+              recusandae laboriosam quam sequi, voluptatum consequatur, nobis nulla assumenda
+              necessitatibus placeat doloremque at dicta inventore, blanditiis ullam culpa maiores
+              beatae aliquid! Quas minus totam ab reprehenderit saepe eius commodi, aspernatur
+              possimus alias voluptatem illo deserunt consequuntur nihil ea similique quidem eos
+              exercitationem! Quae nam assumenda delectus saepe voluptatem qui, ab illo nostrum
+              natus sapiente! Mollitia saepe rerum voluptatibus laborum facere impedit nisi, labore
+              ipsa iusto at quibusdam blanditiis possimus quisquam nesciunt ratione voluptatum? Iure
+              ad numquam enim unde voluptates quas temporibus dolor cum, quaerat quibusdam ab
+              debitis quos odit magni!
+            </p>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img src="/img/face-1.jpg" alt="" class="composition__photo composition__photo--p1" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Moje zdjęcia!</h2>
+        </div>
+        <div id="zoomwall" class="gallery__zoomwall zoomwall">
+          <img src="img/gallery/photo1.jpg" />
+          <img src="img/gallery/photo2.jpg" />
+          <img src="img/gallery/photo3.jpg" />
+          <img src="img/gallery/photo4.jpg" />
+          <img src="img/gallery/photo5.jpg" />
+          <img src="img/gallery/photo6.jpg" />
+          <img src="img/gallery/photo7.jpg" />
+          <img src="img/gallery/photo8.jpg" />
+          <img src="img/gallery/photo9.jpg" />
+          <img src="img/gallery/photo10.jpg" />
+          <img src="img/gallery/photo11.jpg" />
+          <img src="img/gallery/photo12.jpg" />
+          <img src="img/gallery/photo13.jpg" />
+          <img src="img/gallery/photo14.jpg" />
+          <img src="img/gallery/photo15.jpg" />
+          <img src="img/gallery/photo16.jpg" />
+          <img src="img/gallery/photo17.jpg" />
+          <img src="img/gallery/photo18.jpg" />
+          <img src="img/gallery/photo19.jpg" />
+          <img src="img/gallery/photo20.jpg" />
+          <img src="img/gallery/photo21.jpg" />
+          <img src="img/gallery/photo22.jpg" />
+        </div>
+      </section>
+
+      <section class="offer-cards">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Oferta</h2>
+        </div>
+        <section class="section-offer">
+          <div class="row">
+            <div class="col-1-of-4">
+              <div class="offer-box">
+                <i class="offer-box__icon flaticon-wedding-rings"></i>
+                <h3 class="heading-tertiary">Fotografia ślubna</h3>
+                <p class="offer-box__text">
+                  Wykonujemy artystyczne, oryginalne zdjęcia ślubne, poczynając od przygotowań,
+                  ceremonii, zabawy weselnej aż po niepowtarzalną sesję ślubną.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="offer-box">
+                <i class="offer-box__icon flaticon-video-wedding"></i>
+                <h3 class="heading-tertiary">Film ślubny</h3>
+                <p class="offer-box__text">
+                  Tworzymy niezwykłe reportaże ślubne w postaci profesjonalnych filmów oraz
+                  krótkich, kilkuminutowych klipów, tzw. teledysków ślubnych.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="offer-box">
+                <i class="offer-box__icon flaticon-family"></i>
+                <h3 class="heading-tertiary">Fotografia rodzinna</h3>
+                <p class="offer-box__text">
+                  Wykonujemy również naturalne sesje rodzinne, dziecięce oraz ciążowe. Wszystkie
+                  sesje wykonujemy w stylu lifestyle'owym i w plenerze.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="offer-box">
+                <i class="offer-box__icon flaticon-gallery"></i>
+                <h3 class="heading-tertiary">Inne</h3>
+                <p class="offer-box__text">
+                  W naszej ofercie znajdują się również: fotografia reklamowa, produktowa,
+                  fotografia obiektów, wnętrz i bardzo oryginalna fotografia podwodna.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1-of-3">
+              <p class="section-offer__description">
+                O ofertę lub wycenę proszę pytać indywidualnie.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="section-opinions">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Opinie klientów</h2>
+        </div>
+
+        <div class="row">
+          <div class="opinion">
+            <div class="opinion__image">
+              <img src="./img/opinion-face1.jpg" alt="" class="opinion__img" />
+            </div>
+            <div class="opinion__text">
+              <h3 class="heading-rertiary">Opinia 1</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptas
+                obcaecati in libero, tempore nostrum nulla nobis vitae? Hic, sunt eum doloribus
+                mollitia libero deleniti molestiae cum quas blanditiis eveniet. Magnam hic unde
+                corrupti delectus similique sit sed nulla est.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="opinion">
+            <div class="opinion__image">
+              <img src="./img/opinion-face2.jpg" alt="" class="opinion__img" />
+            </div>
+            <div class="opinion__text">
+              <h3 class="heading-rertiary">Opinia 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni beatae
+                dolorem, tenetur vero facilis porro exercitationem. Tenetur aperiam eos sapiente
+                eveniet ut, maxime, soluta doloribus necessitatibus, quo assumenda mollitia
+                temporibus modi totam doloremque eligendi consequatur! A dolorum pariatur nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="opinion">
+            <div class="opinion__image">
+              <img src="/img/opinion-face3.jpg" alt="" class="opinion__img" />
+            </div>
+            <div class="opinion__text">
+              <h3 class="heading-rertiary">Lelia Tillman</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at est? Eum fugit
+                laudantium qui. Molestiae voluptas dolorum saepe nobis perferendis, illum
+                reprehenderit laborum ex ratione ea, dolores aperiam itaque esse expedita omnis
+                iusto quam praesentium mollitia nulla. Magni, laborum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Kontakt</h2>
+        </div>
+        <section class="section-book">
+          <div class="row">
+            <div class="book">
+              <div class="row">
+                <div class="col-1-of-2">
+                  <div class="book__form">
+                    <form action="https://formspree.io/f/xdoyewpb" method="POST" class="form">
+                      <div class="form__group">
+                        <input
+                          type="text"
+                          class="form__input"
+                          placeholder="Imie i nazwisko"
+                          name="name"
+                          id="name"
+                          required
+                        />
+                      </div>
+                      <div class="form__group">
+                        <input
+                          type="email"
+                          class="form__input"
+                          placeholder="Adres email"
+                          name="_replyto"
+                          id="email"
+                          required
+                        />
+                      </div>
+
+                      <div class="form__group">
+                        <textarea
+                          type="text"
+                          class="form__input form__input--message"
+                          name="message"
+                          placeholder="Treść wiadomości"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <div class="form__group">
+                        <button type="submit" class="btn btn--green">Wyślij</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-1-of-2">
+                  <div class="book__form">
+                    <p class="contact-location"><i class="contact-icon flaticon-placeholder"></i>ul. Kaszubska 16a/12 | 75-036 Koszalin</p>
+                    <p class="contact-phone"><i class="contact-icon flaticon-phone-call"></i>Tel: 696-603-138</p>
+                    <p class="contact-email"><i class="contact-icon flaticon-mail"></i>E-mail: kontakt@in-foto.pl</p>
+
+                    <p>Po lewej stronie widnieje formularz kontaktowy, poprzez który wyślą Państwo wiadomość e-mail bezpośrednio ze strony. Korzystając z formularza koniecznie prosimy wpisać w odpowiednim polu własny adres e-mail lub jeżeli takiego Państwo nie posiadacie prosimy wpisać swój nr telefonu w treści wiadomości</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="/img/logo-transparent-gradient.png" alt="Logo" class="footer__logo">
+      </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Instagram</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Pinterest</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-2"><p class="footer__copyright">© 2021 Wojciech Wołoszyn© Wszelkie prawa zastrzeżone.</p></div>
+        </div>
+
+    </footer>
+  </body>
+</html>
